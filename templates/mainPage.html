@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<title>Portfolio</title>
+<style>
+    body{
+        background: url({{bk_image}}) no-repeat center center fixed;
+        background-size: cover;
+        background-color: #f8f9fa;
+    }
+    .navbar-brand{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #383936 !important;
+      
+    }
+    .nav-link {
+      color: black; /* Light gray */
+    }
+    .nav-link:hover {
+      color: #a9a9a9; /* Darker gray for hover */
+    }
+    navbar-brand, .navbar-brand b {
+      color: #ffffff; /* White */
+    }
+    .navbar-brand:hover, .navbar-brand b:hover {
+      color: #cccccc; /* Lighter gray for hover */
+    }
+    .col{
+      height:700px !important;
+      margin-top: 50px;
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+    .icon-div{
+      padding-top:30px;
+      height:80px;
+    }
+    .icon{
+      height:80px;
+    }
+    .name-div{
+      padding-top:40px;
+    }
+    .title-div{
+        padding-top:40px;
+        justify-content:center;
+        font-size:50px;
+    }
+    .icons-div{
+        padding-top:180px;
+    }
+    .card {
+        height:40%;
+    }
+    .btn-div{
+      margin:40px;
+      padding-top:10px;
+    }
+    .btn{
+        width:20%;
+    }
+    .icons{
+      margin-left:19%;
+      background-color:#cccccc;
+      padding-top:5px;
+      width:60%;
+    }
+    .hey{
+      color:#ffffff;
+    }
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index:  1; /* Sit on top */
+      left:  0;
+      top:  0;
+      width:  100%; /* Full width */
+      height:  100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin:  15% auto; /*  15% from the top and centered */
+      padding:  20px;
+      border:  1px solid #888;
+      width:  80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size:  28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand badge bg-primary text-wrap text-dark" style="width: 10rem; height: 2.5rem;"><b>Yamajid Portfolio</b></a>
+          <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/"><i class="fas fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/skills"><i class="fas fa-laptop-code"></i> My Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-sm px-4 text-center overflow-hidden">
+        <div class="row">
+          <div class="col-md-4 d-flex align-items-top">
+            <div class="card m-5">
+              <img src="static/yamajid.jpeg" class="card-img-top">
+              <div class="card-body" style="background-color:#E4E4E4;">
+                <a class="card-title text-center"><i class="fa">YAMAJID</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="name-div">
+              <h1 class="title-div"><i class="hey" style="color=:#ffffff; font-size:80px;">Hey there My Name Is </i><i class="fa" style="color:#FFD829; font-size:90px;">Younes.</i><br>
+                <i class="fa" style="color:red; font-size:50px;">I'm a Front-end Developer </i></h1>
+            </div>
+            <div class="btn-div">
+              <button type="button" class="btn btn-outline-danger" id="aboutmeModal">About me</button>
+            </div>
+            <div class="icons">
+              <a href="https://github.com/YounesAmajid" target="_blank">
+                <img src="static/social_icons/github.png" style="width:30px; margin:10px;">
+              </a>
+              <a href="https://www.linkedin.com/in/yamajid/" target="_blank">
+                <img src="static/social_icons/linkedin.png" style="width:30px; margin:10px;">
+              </a>
+              <a href="https://twitter.com/yamajid_" target="_blank">
+                <img src="static/social_icons/twitter.png" style="width:30px; margin:10px;">
+              </a>
+              <a href="" target="_blank">
+                <img src="static/social_icons/gmail.png" style="width:30px; margin:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="customModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>About Me</h2>
+          <p>Hello! I'm Younes Amajid, a passionate programmer and aspiring web developer. 
+            As a  22-year-old student at  1337 Coding School, I've been honing my skills in 
+            programming languages such as C, C++, Python, HTML, and CSS. With over two years
+            of hands-on experience, I've developed a strong foundation in both front-end and
+            back-end development. My interests lie in creating dynamic websites and 
+            leveraging data analytics to drive decision-making processes. I'm always eager 
+            to learn and take on new challenges in the ever-evolving field of technology.</p>
+        </div>
+      </div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById("customModal");
+         
+        // Get the button that opens the modal
+        var btn = document.getElementById("aboutmeModal");
+         
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+         
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+         
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+         
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+</body>
+</html>

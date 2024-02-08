@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Skills</title>
+</head>
+    <style>
+        .navbar-brand{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #383936 !important;
+
+          }
+          .nav-link {
+            color: black; /* Light gray */
+          }
+          .nav-link:hover {
+            color: #a9a9a9; /* Darker gray for hover */
+          }
+          navbar-brand, .navbar-brand b {
+            color: #ffffff; /* White */
+          }
+          .navbar-brand:hover, .navbar-brand b:hover {
+            color: #cccccc; /* Lighter gray for hover */
+          }
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand badge bg-primary text-wrap text-dark" style="width: 10rem; height: 2.5rem;"><b>Yamajid Portfolio</b></a>
+          <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/"><i class="fas fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/skills"><i class="fas fa-laptop-code"></i> My Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1 style="color:red; padding-left:45%; padding-top:60px;">My Skills</h1>
+    <canvas id="skillsChart"></canvas>
+    <script>
+        // Wait until the DOM is fully loaded
+        window.addEventListener('DOMContentLoaded', (event) => {
+            // Get the canvas element
+            const ctx = document.getElementById('skillsChart').getContext('2d');
+
+            // Define the chart data
+            const data = {
+                labels: ['HTML', 'CSS', 'JavaScript', 'C', 'C++', 'python', 'bash'], // Replace with your actual skill labels
+                datasets: [{
+                    label: 'Proficiency Level',
+                    data: [80,  65,  20, 80, 40, 40, 70], // Replace with your actual skill proficiency levels
+                    backgroundColor: [
+                        'rgba(255,   99,   132,   0.2)',
+                        'rgba(54,   162,   235,   0.2)',
+                        'rgba(255,   206,   86,   0.2)',
+                        'rgba(206,   255,   54,   0.2)',
+                        'rgba(255,   100,   56,   0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255,   99,   132,   1)',
+                        'rgba(54,   162,   235,   1)',
+                        'rgba(255,   206,   86,   1)',
+                        'rgba(206,   255,   54,   1)',
+                        'rgba(255,   100,   56,   1)',
+                    ],
+                    borderWidth:  3
+                }]
+            };
+
+            // Define the chart configuration
+            const config = {
+                type: 'bar',
+                data: data,
+                options: {}
+            };
+
+            // Create the chart
+            const skillsChart = new Chart(ctx, config);
+        });
+    </script>
+</body>
+</html>
