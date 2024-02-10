@@ -52,47 +52,37 @@
         </div>
       </nav>
     <h1 style="color:red; padding-left:45%; padding-top:60px;">My Skills</h1>
-    <canvas id="skillsChart"></canvas>
+    <canvas id="myChart"></canvas>
     <script>
-        // Wait until the DOM is fully loaded
-        window.addEventListener('DOMContentLoaded', (event) => {
-            // Get the canvas element
-            const ctx = document.getElementById('skillsChart').getContext('2d');
-
-            // Define the chart data
-            const data = {
-                labels: ['HTML', 'CSS', 'JavaScript', 'C', 'C++', 'python', 'bash'], // Replace with your actual skill labels
-                datasets: [{
-                    label: 'Proficiency Level',
-                    data: [80,  65,  20, 80, 40, 40, 70], // Replace with your actual skill proficiency levels
-                    backgroundColor: [
-                        'rgba(255,   99,   132,   0.2)',
-                        'rgba(54,   162,   235,   0.2)',
-                        'rgba(255,   206,   86,   0.2)',
-                        'rgba(206,   255,   54,   0.2)',
-                        'rgba(255,   100,   56,   0.2)',
-                    ],
-                    borderColor: [
-                        'rgba(255,   99,   132,   1)',
-                        'rgba(54,   162,   235,   1)',
-                        'rgba(255,   206,   86,   1)',
-                        'rgba(206,   255,   54,   1)',
-                        'rgba(255,   100,   56,   1)',
-                    ],
-                    borderWidth:  3
-                }]
-            };
-
-            // Define the chart configuration
-            const config = {
-                type: 'bar',
-                data: data,
-                options: {}
-            };
-
-            // Create the chart
-            const skillsChart = new Chart(ctx, config);
-        });
-    </script>
+      var ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'radar',
+          data: {
+              labels: ['Python', 'JavaScript', 'C', 'C++', 'HTML', 'CSS'],
+              datasets: [{
+                  label: 'Proficiency Level',
+                  data: [30,  15,  85,  50,  85,  75],
+                  backgroundColor: 'rgba(100,  255,  12,  0.2)',
+                  borderColor: 'rgba(225,  15,  132,  1)',
+                  borderWidth:  2
+              }]
+          },
+          options: {
+              responsive: true,
+              legend: {
+                  position: 'top',
+              },
+              title: {
+                  display: true,
+                  text: 'Programming Language Proficiency'
+              },
+              scale: {
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+      </script>
 </body>
 </html>
