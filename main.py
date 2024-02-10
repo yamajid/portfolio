@@ -9,6 +9,9 @@ def home():
 @app.route("/skills")
 def skills():
     return render_template("skills.html")
+@app.route("/Contact")
+def Conatct():
+    return render_template("Contact.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

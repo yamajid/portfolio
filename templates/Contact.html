@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Skills</title>
+</head>
+    <style>
+        .navbar-brand{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #383936 !important;
+            
+          }
+          .nav-link {
+            color: black; /* Light gray */
+          }
+          .nav-link:hover {
+            color: #a9a9a9; /* Darker gray for hover */
+          }
+          navbar-brand, .navbar-brand b {
+            color: #ffffff; /* White */
+          }
+          .navbar-brand:hover, .navbar-brand b:hover {
+            color: #cccccc; /* Lighter gray for hover */
+          }
+        .contact-info {
+            max-width:  600px;
+            margin:  0 auto;
+            padding:  20px;
+          }
+          
+          .form-group {
+            margin-bottom:  15px;
+          }
+          
+          .form-control {
+            width:  100%;
+            padding:  10px;
+            border:  1px solid #ccc;
+            border-radius:  4px;
+          }
+          
+          .btn-primary {
+            background-color: #007bff;
+            color: white;
+            padding:  10px  20px;
+            border: none;
+            border-radius:  4px;
+            cursor: pointer;
+          }
+          
+          .btn-primary:hover {
+            background-color: #0056b3;
+          }
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand badge bg-primary text-wrap text-dark" style="width: 10rem; height: 2.5rem;"><b>Yamajid Portfolio</b></a>
+          <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/"><i class="fas fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/skills"><i class="fas fa-laptop-code"></i> My Skills</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="contact-info">
+        <h2 style="color:#333;">Contact Me</h2>
+        <p>
+          If you're interested in working together, have any questions, or just want to say hello, feel free to reach out to me. I'm always open to new opportunities and love connecting with fellow developers and tech enthusiasts.
+        </p>
+        <p>
+          You can contact me through the following methods:
+        </p>
+        <ul>
+          <li>Email: <a href="yamajid@mail.com">your-email@example.com</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/yamajid/" target="_blank"> My LinkedIn Profile</a></li>
+          <li>GitHub: <a href="https://github.com/YounesAmajid" target="_blank">  My GitHub Profile</a></li>
+          <li>Twitter: <a href="https://twitter.com/yamajid_" target="_blank">  My Twitter Handle</a></li>
+        </ul>
+        <p>
+          Alternatively, you can fill out the form below to send me a message directly:
+        </p>
+        <form action="/submit-contact-form" method="post">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+</body>
+</html>
