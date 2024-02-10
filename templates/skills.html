@@ -28,6 +28,18 @@
           .navbar-brand:hover, .navbar-brand b:hover {
             color: #cccccc; /* Lighter gray for hover */
           }
+          .skills-description {
+            text-align:center;
+            border-radius:10px;
+            border:2px solid #A7643B;
+            font-size:  1.1em;
+            line-height:  1.6;
+            color: #333;
+            font-family:verdana;
+            margin-bottom:  2em;
+            margin-left:  2em;
+            margin-right:  2em;
+          }
     </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
@@ -51,7 +63,12 @@
           </div>
         </div>
       </nav>
-    <h1 style="color:red; padding-left:45%; padding-top:60px;">My Skills</h1>
+    <h1 style="color:#333; padding-left:45%; padding-top:60px;">My Skills</h1>
+    <div class="skills-description">
+      <p>
+        As a dedicated and passionate programmer, I have honed my skills across a wide range of programming languages and technologies. My proficiency in Python, JavaScript, C, C++, HTML, and CSS, coupled with my experience in front-end and littel of back-end development, allows me to create scalable web applications. I am adept at using frameworks such as Flask and Django to build efficient and user-friendly interfaces. My ability to learn quickly and adapt to new technologies keeps me at the forefront of the ever-evolving tech industry, enabling me to deliver cutting-edge solutions that meet the needs of today's complex business requirements.
+      </p>
+    </div>
     <canvas id="myChart"></canvas>
     <script>
       var ctx = document.getElementById('myChart').getContext('2d');
@@ -62,8 +79,8 @@
               datasets: [{
                   label: 'Proficiency Level',
                   data: [30,  15,  85,  50,  85,  75],
-                  backgroundColor: 'rgba(100,  255,  12,  0.2)',
-                  borderColor: 'rgba(225,  15,  132,  1)',
+                  backgroundColor: 'rgba(1,  25,  12,  0.2)',
+                  borderColor: 'rgba(225,  180,  132,  1)',
                   borderWidth:  2
               }]
           },
