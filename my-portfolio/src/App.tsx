@@ -15,7 +15,6 @@ function App() {
             <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-cyan-500/40 shadow-lg">
               <img src="/public/yamajid.jpg" alt="YAMAJID" className="w-full h-full object-cover" />
             </div>
-
             {/* Personal Info */}
             <div className="text-center">
               <h2 className="text-xl md:text-2xl font-bold text-white">Full Stack Developer</h2>
