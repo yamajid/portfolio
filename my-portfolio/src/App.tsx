@@ -49,6 +49,7 @@ function App() {
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">JavaScript</span>
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">SQL</span>
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">sqlite3</span>
+                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">postgresql</span>
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">Python</span>
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">Django</span>
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">Django Rest Framework</span>
