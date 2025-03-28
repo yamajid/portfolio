@@ -13,7 +13,7 @@ function App() {
           <div className="flex flex-col items-center space-y-6">
             {/* Profile Image */}
             <div className="relative w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-cyan-500/40 shadow-lg">
-              <img src="/public/yamajid.jpg"  className="w-full h-full object-cover" />
+              <img src="/yamajid.jpg"  className="w-full h-full object-cover" />
             </div>
             {/* Personal Info */}
             <div className="text-center">
@@ -73,7 +73,7 @@ function App() {
             {/* Name Section - responsive text size */}
             <div className='bg-gray-400/30 rounded-lg p-4 md:p-5'>
               <h1 className='text-white text-4xl md:text-5xl lg:text-7xl animate-bounce'>
-                I'm Y<span className='text-cyan-500/60'><b>A</b></span><b>MAJID</b>
+                I<span className='text-cyan-500/60'><b>'</b></span>m Y<span className='text-cyan-500/60'><b>A</b></span><b>MAJID</b>
               </h1>
             </div>
 
@@ -100,10 +100,12 @@ function App() {
                 {/* Project Card 1 */}
                 <div className='bg-gray-700/50 rounded-lg p-4 border border-cyan-500/30 hover:shadow-cyan-500/20 hover:shadow-lg transition-all'>
                   <h3 className='text-white text-lg md:text-xl font-bold'>Full Stack Web Application</h3>
-                  <p className='text-gray-300 mt-2 text-sm md:text-base'>Django REST + Vite application with CI/CD integration</p>
+                  <p className='text-gray-300 mt-2 text-sm md:text-base'>Django REST + WebSockets + Vite application and tailwindcss with CI/CD integration</p>
                   <div className='flex flex-wrap gap-2 mt-3'>
                     <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>Django</span>
                     <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>Vite</span>
+                    <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>tailwindcss</span>
+                    <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>WebSocket</span>
                     <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>Docker</span>
                   </div>
                   <a href="https://www.github.com/yamajid/ft_transcendence" className='text-cyan-400 text-sm mt-4 inline-block hover:underline'>View Project →</a>
@@ -132,9 +134,10 @@ function App() {
                 </div>
                 <div className='bg-gray-700/50 rounded-lg p-4 border border-cyan-500/30 hover:shadow-cyan-500/20 hover:shadow-lg transition-all'>
                   <h3 className='text-white text-lg md:text-xl font-bold'>Cycle Life</h3>
-                  <p className='text-gray-300 mt-2 text-sm md:text-base'>Using Vite & TypeScript for frontend, Django REST for backend</p>
+                  <p className='text-gray-300 mt-2 text-sm md:text-base'>Using Vite & TypeScript and tailwindcss for frontend, Django REST for backend</p>
                   <div className='flex flex-wrap gap-2 mt-3'>
                     <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>TypeScript</span>
+                    <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>tailwindcss</span>
                     <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>Django REST</span>
                     <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>Vite</span>
                   </div>
