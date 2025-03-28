@@ -162,11 +162,11 @@ function App() {
                 {/* Experience Item 2 */}
                 <div className='relative pl-8 border-l-2 border-cyan-500/40'>
                   <div className='absolute -left-[9px] top-0 w-4 h-4 bg-cyan-500 rounded-full'></div>
-                  <h3 className='text-white text-lg md:text-xl font-bold'>Software Engineer Intern</h3>
-                  <p className='text-cyan-400'>Company Name • 2022 - 2023</p>
+                  <h3 className='text-white text-lg md:text-xl font-bold'>Digital Solutions Architect</h3>
+                  <p className='text-cyan-400'>2022 - 2025</p>
                   <p className='text-gray-700 mt-2 text-sm md:text-base'>
-                    Worked on network applications using C++ and assisted in developing web interfaces.
-                    Gained experience in TCP/IP protocols and low-level programming.
+                    Finishing the cursus at 1337 School, I have learned a lot of things about programming and
+                    how to work in a team
                   </p>
                 </div>
               </div>
