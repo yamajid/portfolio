@@ -22,7 +22,7 @@ function App() {
             </div>
 
             {/* Contact Links */}
-            <div className='h-10 w-28 flex justify-center items-center bg-gray-500/50 shadow-cyan-500 border-cyan-500/40 rounded-lg'>
+            <div className='h-10 w-28 flex justify-center items-center bg-gray-700/50 border border-cyan-500/30 hover:shadow-cyan-500/20 hover:shadow-lg transition-all rounded-lg'>
 
             <div className="flex space-x-4">
               <a href="https://github.com/yamajid" className="text-white hover:text-cyan-400 transition-colors">
