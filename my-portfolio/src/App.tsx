@@ -17,7 +17,7 @@ function App() {
             </div>
             {/* Personal Info */}
             <div className="text-center">
-              <h2 className="text-xl md:text-2xl font-bold text-white">Full Stack Developer</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-white">Software engineer</h2>
               <p className="text-gray-700">Based in Agadir</p>
             </div>
 
@@ -36,7 +36,7 @@ function App() {
                 </svg>
               </a>
               {/* Add more social icons as needed */}
-            </div>
+ƒ            </div>
             </div>
 
             {/* Skills Section */}
@@ -81,7 +81,7 @@ function App() {
             {/* Bio Section */}
             <div className='bg-gray-400/30 rounded-lg p-4 md:p-5'>
               <p className='text-gray-600 text-base md:text-lg'><b>
-                I am a skilled web developer with hands-on experience in building full-stack web
+                I am a software engineering student with hands-on experience in building full-stack web
                 applications using modern technologies like Django REST Framework (DRF), ReactJS,
                 and Docker for deployment. ensuring seamless CI/CD pipelines and efficient
                 deployment workflows. Additionally, I have experience in low-level programming and
