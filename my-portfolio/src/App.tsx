@@ -134,13 +134,10 @@ function App() {
                   <a href="https://www.github.com/yamajid/Inception" className='text-cyan-400 text-sm mt-4 inline-block hover:underline'>View Project →</a>
                 </div>
                 <div className='bg-gray-700/50 rounded-lg p-4 border border-cyan-500/30 hover:shadow-cyan-500/20 hover:shadow-lg transition-all'>
-                  <h3 className='text-white text-lg md:text-xl font-bold'>Cycle Life</h3>
-                  <p className='text-gray-300 mt-2 text-sm md:text-base'>Using Vite & TypeScript and tailwindcss for frontend, Django REST for backend</p>
+                  <h3 className='text-white text-lg md:text-xl font-bold'>Minishell</h3>
+                  <p className='text-gray-300 mt-2 text-sm md:text-base'>A custom implementation of a Unix shell, featuring command execution, built-in commands, and input/output redirection.</p>
                   <div className='flex flex-wrap gap-2 mt-3'>
-                    <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>TypeScript</span>
-                    <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>tailwindcss</span>
-                    <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>Django REST</span>
-                    <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>Vite</span>
+                    <span className='px-2 py-1 bg-gray-600/50 text-gray-200 rounded text-xs'>C</span>
                   </div>
                   <a href="https://www.github.com/yamajid/Inception" className='text-cyan-400 text-sm mt-4 inline-block hover:underline'>View Project →</a>
                 </div>
