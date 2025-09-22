@@ -66,7 +66,6 @@ function App() {
             </div>
 
             {/* Simple bio */}
-            <div className="mt-6 p-4 rounded-lg bg-cyan-50 text-cyan-900 text-center text-sm shadow">Hi! I love building things and learning new tech. Welcome to my portfolio! 🚀</div>
           </div>
         </Card>
 
