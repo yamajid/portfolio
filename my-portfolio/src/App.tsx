@@ -10,7 +10,7 @@ function App() {
       <div className='w-full min-h-screen flex flex-col lg:flex-row justify-center items-center gap-5 p-4 md:p-8'>
 
         {/* Left card - full width on mobile, 1/3 on larger screens */}
-  <Card className='min-h-[500px] h-auto lg:h-screen w-full lg:w-1/3 bg-white/90 shadow-lg border-cyan-200 p-6 mb-5 lg:mb-0 flex flex-col items-center'>
+  <Card className='min-h-[500px] h-auto lg:max-h-screen lg:overflow-y-auto w-full lg:w-1/3 bg-white/90 shadow-lg border-cyan-200 p-6 mb-5 lg:mb-0 flex flex-col'>
           {/* Profile Section */}
           <div className="flex flex-col items-center space-y-6">
             {/* Profile Image */}
@@ -61,6 +61,10 @@ function App() {
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">C</span>
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">TCP/IP</span>
                 <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">CI/CD</span>
+                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">TCP Socket</span>
+                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">JWT</span>
+                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">API's</span>
+                <span className="px-3 py-1 bg-cyan-500/50 text-white rounded-full text-sm">OAuth</span>
                 {/* Add more skills */}
               </div>
             </div>
@@ -77,7 +81,7 @@ function App() {
               <h1 className='text-cyan-900 text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight animate-bounce'>
                 I<span className='text-cyan-500/60'><b>'</b></span>m Y<span className='text-cyan-500/60'><b>A</b></span><b>MAJID</b>
               </h1>
-              <p className='mt-2 text-base md:text-lg font-medium text-cyan-700'>Software engineer & Full Stack Developer</p>
+              <p className='mt-2 text-base md:text-lg font-medium text-cyan-700'>Full Stack Developer & Systems Enthusiast</p>
             </div>
 
             {/* Bio Section */}
