@@ -77,7 +77,7 @@ function App() {
               <h1 className='text-cyan-900 text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight animate-bounce'>
                 I<span className='text-cyan-500/60'><b>'</b></span>m Y<span className='text-cyan-500/60'><b>A</b></span><b>MAJID</b>
               </h1>
-              <p className='mt-2 text-base md:text-lg font-medium text-cyan-700'>Full Stack Developer & Systems Enthusiast</p>
+              <p className='mt-2 text-base md:text-lg font-medium text-cyan-700'>Software engineer & Full Stack Developer</p>
             </div>
 
             {/* Bio Section */}
