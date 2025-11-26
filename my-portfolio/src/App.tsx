@@ -138,7 +138,7 @@ function App() {
                 {/* Experience Item 2 */}
                 <div className='relative pl-8 border-l-2 border-blue-500/30'>
                   <div className='absolute -left-[9px] top-0 w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-lg shadow-blue-500/50'></div>
-                  <h3 className='text-lg md:text-xl font-bold text-blue-400'>42 common core</h3>
+                  <h3 className='text-lg md:text-xl font-bold text-blue-400'>42 Common Core</h3>
                   <p className='text-slate-300'>2022 - 2025</p>
                   <p className='mt-2 text-sm md:text-base text-slate-200'>
                     The common core of the 42 curriculum represents a set of skills to be ready for a first professional experience.
